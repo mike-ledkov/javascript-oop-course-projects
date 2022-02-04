@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gallery Starter</title>
+    <title>Gallery Project</title>
     <!-- font-awesome -->
     <link
       rel="stylesheet"
@@ -13,7 +13,106 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h2>gallery project</h2>
-    <script src="app.js"></script>
+    <h1>Gallery Project</h1>
+    <!-- Hungary -->
+    <section class="section hungary">
+      <img 
+        src="./images/hungary-01.jpg" 
+        title="Danube and Chain Bridge at night" 
+        alt="Danube and Chain Bridge at night" 
+        class="img" 
+        data-id=1
+      >
+      <img 
+        src="./images/hungary-02.jpg" 
+        title="Mary taking picture of me" 
+        alt="Mary taking picture of me" 
+        class="img" 
+        data-id=2
+      >
+      <img 
+        src="./images/hungary-03.jpg" 
+        title="Budapest at dusk" 
+        alt="Budapest at dusk" 
+        class="img" 
+        data-id=3
+      >
+      <img 
+        src="./images/hungary-04.jpg" 
+        title="Colorful Budapest at night" 
+        alt="Colorful Budapest at night" 
+        class="img" 
+        data-id=4
+      >
+      <img 
+        src="./images/hungary-05.jpg" 
+        title="View on Pest from Buda" 
+        alt="View on Pest from Buda" 
+        class="img" 
+        data-id=5
+      >
+    </section>
+
+    <!-- Montenegro -->
+    <section class="section montenegro">
+      <img 
+        src="./images/montenegro-01.jpg" 
+        title="Montenegro 1" 
+        alt="picture from montenegro" 
+        class="img" 
+        data-id="1"
+      >
+      <img 
+        src="./images/montenegro-02.jpg" 
+        title="Montenegro 2" 
+        alt="picture from montenegro" 
+        class="img" 
+        data-id="2"
+      >
+      <img 
+        src="./images/montenegro-03.jpg" 
+        title="Montenegro 3" 
+        alt="picture from montenegro" 
+        class="img" 
+        data-id="3"
+      >
+      <img 
+        src="./images/montenegro-04.jpg" 
+        title="Montenegro 4" 
+        alt="picture from montenegro" 
+        class="img" 
+        data-id="4"
+      >
+      <img 
+        src="./images/montenegro-05.jpg" 
+        title="Montenegro 5" 
+        alt="picture from montenegro" 
+        class="img" 
+        data-id="5"
+      >
+    </section>
+
+    <!-- Modal -->
+    <div class="modal">
+        <button class="close-btn">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="modal-content">
+            <!-- prev and next buttons -->
+            <button class="prev-btn">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="next-btn">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <!-- content -->
+            <img class="main-img" src="./images/hungary-01.jpg" alt="city of budapest">
+            <h3 class="image-name">City of Budapest</h3>
+            <div class="thumbnails">
+                <!-- we provide thumbnails with the openModal function -->
+            </div>
+        </div>
+    </div>
+    <script src="app-class.js"></script>
   </body>
 </html>

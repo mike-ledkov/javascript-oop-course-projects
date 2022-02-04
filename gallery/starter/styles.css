@@ -68,7 +68,8 @@ Global Styles
 }
 body {
   font-family: var(--ff-secondary);
-  background: var(--clr-white);
+  /* background: var(--clr-grey-10); */
+  background: floralwhite;
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
@@ -84,7 +85,7 @@ h2,
 h3,
 h4 {
   letter-spacing: var(--spacing);
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   line-height: 1.25;
   margin-bottom: 0.75rem;
   font-family: var(--ff-primary);
@@ -199,7 +200,7 @@ Modal
   position: absolute;
   top: 1rem;
   right: 1rem;
-  font-size: 3rem;
+  font-size: 2rem;
   color: var(--clr-white);
   background: transparent;
   border-color: transparent;
@@ -208,9 +209,9 @@ Modal
 .next-btn,
 .prev-btn {
   position: absolute;
-  top: 10rem;
-  right: -2.5rem;
-  transform: translateY(-50%);
+  top: 40%;
+  /* right: -2.5rem; */
+  /* transform: translateY(-50%); */
   background: transparent;
   font-size: 2rem;
   color: var(--clr-white);
@@ -237,20 +238,22 @@ Modal
 }
 .main-img {
   width: 100%;
-  height: 20rem;
+  height: 30rem;
   object-fit: cover;
   border-radius: var(--radius);
+  /* border-color: var(--clr-grey-3); */
+  /* border-style: solid; */
 }
 .image-name {
   text-align: center;
   margin: 1rem 0 3rem;
   color: var(--clr-white);
 }
-.modal-images {
+.thumbnails {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
 }
-.modal-img {
+.thumbnail-img {
   width: 100%;
   height: 5rem;
   object-fit: cover;
@@ -258,9 +261,9 @@ Modal
   transition: var(--transition);
   cursor: pointer;
 }
-.modal-img:hover {
+.thumbnail-img:hover {
   opacity: 1;
 }
-.modal-img.selected {
+.thumbnail-img.selected {
   opacity: 1;
 }
